@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Video call - demo</title>
+	<meta charset="UTF-8">
 </head>
 <body>
 	<video id="yourCam" width="300px" height="200px" controls></video>
@@ -9,6 +10,12 @@
 	<textarea id="yourSignal" placeholder="yourSignal"></textarea>
 	<textarea id="yourFrSignal" placeholder="yourFrSignal"></textarea>
 	<input type="button" value="connect" id="connect">
+	<p><b>Hướng dẫn: </b>Có 2 bên A và B , URL bên A thêm #1 <br>
+	- Bên A,ở input "yourSignal" nhận được 1 signal có type="offer" -> Copy và gửi signal bên trong cho bên B. <br>
+	- Bên B,Copy signal vừa nhận được -> paste vào input "yourFrSignal" -> nhấn connect -> nhận được 1 signal có type="answer" ở input "yourSignal" -> gửi cho bên A. <br>
+	- Bên A,Copy signal vừa nhận được -> paste vào input "yourFrSignal" -> nhấn connect. <br>
+	===> DONE!
+	</p>
 	<script type="text/javascript" src="public/js/bundle.js"></script>
 </body>
 </html>
